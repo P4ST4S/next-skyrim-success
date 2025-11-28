@@ -1,10 +1,7 @@
-import { pgTable, varchar, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
-export const achievementStatus = pgTable('achievement_status', {
-  id: varchar('id', { length: 50 }).primaryKey(),
-  achievementId: varchar('achievement_id', { length: 50 }).notNull().unique(),
-  completedAt: timestamp('completed_at', { withTimezone: true }).notNull().defaultNow(),
+export const achievementStatus = pgTable("achievement_status", {
+  id: serial("id").primaryKey(),
+  achievementId: text("achievement_id").notNull().unique(),
+  completedAt: timestamp("completed_at").defaultNow().notNull(),
 });
-
-export type AchievementStatus = typeof achievementStatus.$inferSelect;
-export type NewAchievementStatus = typeof achievementStatus.$inferInsert;

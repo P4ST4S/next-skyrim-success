@@ -1,17 +1,34 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import { Cinzel, Inter } from "next/font/google";
+import "./globals.css";
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: 'Skyrim Achievement Tracker',
-  description: 'Track your legendary journey across the lands of Skyrim',
+  title: "Suivi des Succès Skyrim",
+  description: "Suivez vos succès dans le monde de Skyrim",
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="fr">
+      <body
+        className={`${cinzel.variable} ${inter.variable} antialiased bg-[#1a1a1a] text-[#c0c0c0]`}
+      >
+        {children}
+      </body>
     </html>
   );
-};
-
-export default RootLayout;
+}

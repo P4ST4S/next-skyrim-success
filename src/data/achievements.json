@@ -130,7 +130,7 @@
     "title": "L'Orphelinat",
     "description": "Tuer Grelod la Douce.",
     "category": "Guildes",
-    "icon": "dagger"
+    "icon": "sword"
   },
   {
     "id": "guild-emperor",
@@ -375,7 +375,7 @@
     "title": "Bagarreur",
     "description": "Faire une Killcam à mains nues sur un ennemi.",
     "category": "Combat",
-    "icon": "fist"
+    "icon": "hand"
   },
   {
     "id": "craft-armor",
@@ -606,7 +606,7 @@
     "title": "Dague de Mehrunes",
     "description": "Faire la quête de la dague de Mehrunes.",
     "category": "Daedra",
-    "icon": "dagger"
+    "icon": "sword"
   },
   {
     "id": "daedra-meridia-gem",
