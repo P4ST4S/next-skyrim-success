@@ -1,0 +1,681 @@
+[
+  {
+    "id": "main-helgen",
+    "title": "Unbound",
+    "description": "Sortir de Helgen.",
+    "category": "Histoire",
+    "icon": "door-open"
+  },
+  {
+    "id": "main-fusrodah",
+    "title": "La Voix",
+    "description": "Débloquer le cri Déferlement complet (Fus Ro Dah).",
+    "category": "Histoire",
+    "icon": "wind"
+  },
+  {
+    "id": "main-tertre",
+    "title": "Griffe d'Or",
+    "description": "Finir le Tertre des Chutes Tourmentées.",
+    "category": "Histoire",
+    "icon": "skull"
+  },
+  {
+    "id": "main-first-dragon",
+    "title": "Enfant de Dragon",
+    "description": "Tuer le premier dragon.",
+    "category": "Histoire",
+    "icon": "flame"
+  },
+  {
+    "id": "main-7000-steps",
+    "title": "Pèlerinage",
+    "description": "Grimper les 7000 marches jusqu'au Haut Hrothgar.",
+    "category": "Histoire",
+    "icon": "mountain-snow"
+  },
+  {
+    "id": "main-troll",
+    "title": "Tueur de Troll",
+    "description": "Tuer le Troll de Glace sur le chemin du Haut Hrothgar.",
+    "category": "Combat",
+    "icon": "club"
+  },
+  {
+    "id": "main-thalmor",
+    "title": "Immunité Diplomatique",
+    "description": "Infiltrer l'Ambassade du Thalmor.",
+    "category": "Histoire",
+    "icon": "spy"
+  },
+  {
+    "id": "main-wall",
+    "title": "Le Mur d'Alduin",
+    "description": "Trouver le 'Mur' au Temple de Havreciel.",
+    "category": "Histoire",
+    "icon": "scroll"
+  },
+  {
+    "id": "main-odahviing",
+    "title": "Le Déchu",
+    "description": "Capturer Odahviing à Fort-Dragon.",
+    "category": "Histoire",
+    "icon": "link"
+  },
+  {
+    "id": "main-paarthurnax",
+    "title": "Dilemme",
+    "description": "Tuer Paarthurnax (ou décider de l'épargner).",
+    "category": "Histoire",
+    "icon": "heart-crack"
+  },
+  {
+    "id": "main-alduin",
+    "title": "Tueur de Monde",
+    "description": "Aller en Sovngarde et vaincre Alduin.",
+    "category": "Histoire",
+    "icon": "crown"
+  },
+  {
+    "id": "guild-companions-werewolf",
+    "title": "Cercle",
+    "description": "Rejoindre les Compagnons et devenir un Loup-Garou.",
+    "category": "Guildes",
+    "icon": "moon"
+  },
+  {
+    "id": "guild-cure-lycan",
+    "title": "Pureté",
+    "description": "Soigner sa Lycanthropie (ou celle de Kodlak).",
+    "category": "Guildes",
+    "icon": "sparkles"
+  },
+  {
+    "id": "guild-college-enter",
+    "title": "Première Leçon",
+    "description": "Entrer à l'Académie de Fortdhiver en réussissant le test de Faralda.",
+    "category": "Guildes",
+    "icon": "book-open"
+  },
+  {
+    "id": "guild-magnus-eye",
+    "title": "L'Œil de Magnus",
+    "description": "Trouver l'Œil de Magnus.",
+    "category": "Guildes",
+    "icon": "eye"
+  },
+  {
+    "id": "guild-archmage",
+    "title": "Archimage",
+    "description": "Devenir l'Archimage de l'Académie.",
+    "category": "Guildes",
+    "icon": "zap"
+  },
+  {
+    "id": "guild-db-contact",
+    "title": "Ils savent",
+    "description": "Être contacté par la Confrérie Noire.",
+    "category": "Guildes",
+    "icon": "hand"
+  },
+  {
+    "id": "guild-db-bride",
+    "title": "Jusqu'à ce que la mort...",
+    "description": "Tuer la mariée (Victoria Vici).",
+    "category": "Guildes",
+    "icon": "wine"
+  },
+  {
+    "id": "guild-grelod",
+    "title": "L'Orphelinat",
+    "description": "Tuer Grelod la Douce.",
+    "category": "Guildes",
+    "icon": "dagger"
+  },
+  {
+    "id": "guild-emperor",
+    "title": "Ave Sithis !",
+    "description": "Assassiner l'Empereur.",
+    "category": "Guildes",
+    "icon": "skull"
+  },
+  {
+    "id": "dlc-dawnguard",
+    "title": "Garde de l'Aube",
+    "description": "Rejoindre la Garde de l'Aube (ou les Vampires).",
+    "category": "DLC",
+    "icon": "sun"
+  },
+  {
+    "id": "dlc-serana",
+    "title": "Vampire",
+    "description": "Sauver Serana.",
+    "category": "DLC",
+    "icon": "droplet"
+  },
+  {
+    "id": "dlc-soulcairn",
+    "title": "Cairn des Âmes",
+    "description": "Visiter le Cairn des Âmes.",
+    "category": "DLC",
+    "icon": "ghost"
+  },
+  {
+    "id": "dlc-auriel",
+    "title": "Arc d'Auriel",
+    "description": "Trouver l'arc d'Auriel.",
+    "category": "DLC",
+    "icon": "crosshair"
+  },
+  {
+    "id": "dlc-solstheim",
+    "title": "Solstheim",
+    "description": "Aller sur l'île de Solstheim.",
+    "category": "DLC",
+    "icon": "map-pin"
+  },
+  {
+    "id": "dlc-blackbook",
+    "title": "Savoir Interdit",
+    "description": "Lire un Livre Noir dans Apocrypha.",
+    "category": "DLC",
+    "icon": "book"
+  },
+  {
+    "id": "dlc-tame-dragon",
+    "title": "Volonté Pliée",
+    "description": "Apprivoiser un dragon sur Solstheim.",
+    "category": "DLC",
+    "icon": "message-circle"
+  },
+  {
+    "id": "civil-choose",
+    "title": "Guerre Civile",
+    "description": "Choisir un camp (Sombrages ou Impériaux).",
+    "category": "Histoire",
+    "icon": "flag"
+  },
+  {
+    "id": "civil-whiterun",
+    "title": "Bataille de Blancherive",
+    "description": "Participer à la bataille de Blancherive.",
+    "category": "Histoire",
+    "icon": "shield-alert"
+  },
+  {
+    "id": "fun-lvl10",
+    "title": "Héros Novice",
+    "description": "Atteindre le niveau 10.",
+    "category": "Progression",
+    "icon": "bar-chart-big"
+  },
+  {
+    "id": "fun-sweetroll",
+    "title": "Gourmandise",
+    "description": "Voler un Petit pain sucré (Sweetroll) à un garde.",
+    "category": "Fun",
+    "icon": "cookie"
+  },
+  {
+    "id": "fun-bucket",
+    "title": "Aveugle",
+    "description": "Mettre une marmite ou un panier sur la tête d'un marchand.",
+    "category": "Fun",
+    "icon": "shopping-bag"
+  },
+  {
+    "id": "fun-shout-kill",
+    "title": "La Voix qui Tue",
+    "description": "Tuer un ennemi en lui criant dessus.",
+    "category": "Combat",
+    "icon": "mic-2"
+  },
+  {
+    "id": "fun-lockpick-master",
+    "title": "Sésame",
+    "description": "Crocheter une serrure de niveau 'Maître'.",
+    "category": "Compétence",
+    "icon": "lock"
+  },
+  {
+    "id": "life-marriage",
+    "title": "Mariage",
+    "description": "Se marier.",
+    "category": "Vie",
+    "icon": "heart"
+  },
+  {
+    "id": "life-adopt",
+    "title": "Famille",
+    "description": "Adopter un enfant.",
+    "category": "Vie",
+    "icon": "users"
+  },
+  {
+    "id": "life-horse",
+    "title": "Monture",
+    "description": "Acheter un cheval.",
+    "category": "Vie",
+    "icon": "horse-head"
+  },
+  {
+    "id": "fun-giant-space",
+    "title": "Programme Spatial",
+    "description": "Se faire envoyer dans l'espace par un coup de massue de Géant.",
+    "category": "Fun",
+    "icon": "rocket"
+  },
+  {
+    "id": "fun-jump",
+    "title": "Saut de la Foi",
+    "description": "Sauter du haut de la Gorge du Monde.",
+    "category": "Fun",
+    "icon": "arrow-down"
+  },
+  {
+    "id": "crime-bounty",
+    "title": "Recherché",
+    "description": "Avoir une prime de 1000 pièces d'or dans une châtellerie.",
+    "category": "Crime",
+    "icon": "coins"
+  },
+  {
+    "id": "crime-prison",
+    "title": "Au trou",
+    "description": "Faire de la prison (dormir sur le lit de prisonnier).",
+    "category": "Crime",
+    "icon": "grid"
+  },
+  {
+    "id": "crime-escape",
+    "title": "Évasion",
+    "description": "S'évader de prison (Cidna Mine ou prison normale).",
+    "category": "Crime",
+    "icon": "run"
+  },
+  {
+    "id": "fun-skooma",
+    "title": "Mauvaise Habitude",
+    "description": "Boire de la Skooma.",
+    "category": "Fun",
+    "icon": "flask-conical"
+  },
+  {
+    "id": "explo-headless",
+    "title": "Cavalier Sans Tête",
+    "description": "Trouver le Cavalier sans tête la nuit.",
+    "category": "Exploration",
+    "icon": "ghost"
+  },
+  {
+    "id": "combat-arrow",
+    "title": "Réflexes",
+    "description": "Parer une flèche avec un bouclier.",
+    "category": "Combat",
+    "icon": "shield"
+  },
+  {
+    "id": "gameplay-squad",
+    "title": "Escouade",
+    "description": "Avoir 3 compagnons en même temps (humain + chien + invocation).",
+    "category": "Gameplay",
+    "icon": "users-2"
+  },
+  {
+    "id": "explo-maiq",
+    "title": "Le Menteur",
+    "description": "Trouver le PNJ M'aiq le Menteur.",
+    "category": "Exploration",
+    "icon": "cat"
+  },
+  {
+    "id": "explo-mask",
+    "title": "Prêtre Dragon",
+    "description": "Trouver un masque de Prêtre-Dragon.",
+    "category": "Exploration",
+    "icon": "mask"
+  },
+  {
+    "id": "crime-thugs",
+    "title": "Karma",
+    "description": "Se faire attaquer par des 'Voyous' envoyés par un PNJ volé.",
+    "category": "Crime",
+    "icon": "angry"
+  },
+  {
+    "id": "craft-soup",
+    "title": "Chef",
+    "description": "Cuisiner la 'Soupe de Légumes'.",
+    "category": "Crafting",
+    "icon": "soup"
+  },
+  {
+    "id": "magic-telekinesis",
+    "title": "Télékinésie",
+    "description": "Tuer un ennemi en lui jetant un objet avec le sort Télékinésie.",
+    "category": "Magie",
+    "icon": "move"
+  },
+  {
+    "id": "magic-fury",
+    "title": "Chaos",
+    "description": "Traverser une salle remplie d'ennemis en utilisant uniquement le sort Furie.",
+    "category": "Magie",
+    "icon": "flame-kindling"
+  },
+  {
+    "id": "explo-kagrenzel",
+    "title": "La Chute",
+    "description": "Survivre à la chute vertigineuse dans les ruines de Kagrenzel.",
+    "category": "Exploration",
+    "icon": "chevrons-down"
+  },
+  {
+    "id": "combat-killcam",
+    "title": "Bagarreur",
+    "description": "Faire une Killcam à mains nues sur un ennemi.",
+    "category": "Combat",
+    "icon": "fist"
+  },
+  {
+    "id": "craft-armor",
+    "title": "Forgeron",
+    "description": "Fabriquer sa propre armure.",
+    "category": "Crafting",
+    "icon": "hammer"
+  },
+  {
+    "id": "craft-enchant",
+    "title": "Enchanteur",
+    "description": "Enchanter une pièce d'équipement et la renommer.",
+    "category": "Crafting",
+    "icon": "wand"
+  },
+  {
+    "id": "skill-book",
+    "title": "Rat de bibliothèque",
+    "description": "Lire un livre de compétence.",
+    "category": "Compétence",
+    "icon": "book"
+  },
+  {
+    "id": "craft-poison",
+    "title": "Poison",
+    "description": "Créer un poison et l'appliquer sur son arme.",
+    "category": "Crafting",
+    "icon": "skull"
+  },
+  {
+    "id": "craft-refine",
+    "title": "Raffinement",
+    "description": "Améliorer une arme avec la meule pour qu'elle soit 'raffinée'.",
+    "category": "Crafting",
+    "icon": "axe"
+  },
+  {
+    "id": "craft-eat",
+    "title": "Goûteur",
+    "description": "Manger un ingrédient brut pour découvrir son effet.",
+    "category": "Crafting",
+    "icon": "apple"
+  },
+  {
+    "id": "skill-100",
+    "title": "Maître",
+    "description": "Avoir une statistique niveau 100.",
+    "category": "Progression",
+    "icon": "award"
+  },
+  {
+    "id": "combat-rolff",
+    "title": "Baston",
+    "description": "Battre Rolff Rudepoing dans un duel à mains nues.",
+    "category": "Combat",
+    "icon": "fist"
+  },
+  {
+    "id": "combat-giant",
+    "title": "David vs Goliath",
+    "description": "Provoquer une chute d'un géant.",
+    "category": "Combat",
+    "icon": "footprints"
+  },
+  {
+    "id": "fun-cheese",
+    "title": "Voleur de Fromage",
+    "description": "Voler le fromage d'un camp de géants sans mourir.",
+    "category": "Fun",
+    "icon": "pizza"
+  },
+  {
+    "id": "combat-centurion",
+    "title": "Machine",
+    "description": "Battre un centurion Dwemer.",
+    "category": "Combat",
+    "icon": "bot"
+  },
+  {
+    "id": "combat-sabre",
+    "title": "Gros Chat",
+    "description": "Tuer un Smilodon.",
+    "category": "Combat",
+    "icon": "paw-print"
+  },
+  {
+    "id": "combat-chaurus",
+    "title": "Insecte",
+    "description": "Tuer un Chaurus.",
+    "category": "Combat",
+    "icon": "bug"
+  },
+  {
+    "id": "explo-cities",
+    "title": "Explorateur",
+    "description": "Visiter toutes les villes.",
+    "category": "Exploration",
+    "icon": "compass"
+  },
+  {
+    "id": "combat-bandit",
+    "title": "Nettoyage",
+    "description": "Battre un malandrin.",
+    "category": "Combat",
+    "icon": "sword"
+  },
+  {
+    "id": "daedra-wabbajack",
+    "title": "Folie",
+    "description": "Obtenir Wabbajack.",
+    "category": "Daedra",
+    "icon": "dices"
+  },
+  {
+    "id": "quest-butcher",
+    "title": "Enquêteur",
+    "description": "Résoudre l'enquête du Boucher de Vendeaume.",
+    "category": "Quête",
+    "icon": "search"
+  },
+  {
+    "id": "daedra-azura",
+    "title": "Azura",
+    "description": "Obtenir l'Étoile d'Azura.",
+    "category": "Daedra",
+    "icon": "star"
+  },
+  {
+    "id": "daedra-molag",
+    "title": "Maison Abandonnée",
+    "description": "Obtenir la Masse de Molag Bal.",
+    "category": "Daedra",
+    "icon": "hammer"
+  },
+  {
+    "id": "daedra-dawnbreaker",
+    "title": "Aubéclat",
+    "description": "Obtenir Aubéclat.",
+    "category": "Daedra",
+    "icon": "sun-dim"
+  },
+  {
+    "id": "explo-treasure",
+    "title": "Chasse au Trésor",
+    "description": "Trouver le trésor d'une carte au trésor.",
+    "category": "Exploration",
+    "icon": "map"
+  },
+  {
+    "id": "explo-blackreach",
+    "title": "Griffenoire",
+    "description": "Entrer dans Griffenoire.",
+    "category": "Exploration",
+    "icon": "flashlight"
+  },
+  {
+    "id": "explo-time-mask",
+    "title": "Voyage Temporel",
+    "description": "Utiliser le Masque de Bois au Labyrinthe.",
+    "category": "Exploration",
+    "icon": "clock"
+  },
+  {
+    "id": "secret-gong",
+    "title": "Dragon Caché",
+    "description": "Tirer sur le gong géant dans Griffenoire.",
+    "category": "Secret",
+    "icon": "bell"
+  },
+  {
+    "id": "combat-draugr",
+    "title": "Réveil Brutal",
+    "description": "Réveiller un Draugr en lui mettant un coup avant qu'il ne se lève.",
+    "category": "Combat",
+    "icon": "zap"
+  },
+  {
+    "id": "quest-help",
+    "title": "Citoyen Modèle",
+    "description": "Aider 3 citoyens (quêtes 'Divers').",
+    "category": "Quête",
+    "icon": "thumbs-up"
+  },
+  {
+    "id": "life-face",
+    "title": "Nouveau Visage",
+    "description": "Changer de visage.",
+    "category": "Vie",
+    "icon": "smile"
+  },
+  {
+    "id": "explo-stone",
+    "title": "Pierre Dressée",
+    "description": "Découvrir une Pierre Dressée.",
+    "category": "Exploration",
+    "icon": "columns"
+  },
+  {
+    "id": "secret-two-stones",
+    "title": "Double Bénédiction",
+    "description": "Avoir 2 atouts de Pierre Dressée en même temps.",
+    "category": "Secret",
+    "icon": "crown"
+  },
+  {
+    "id": "main-elder-scroll",
+    "title": "Savoir des Anciens",
+    "description": "Obtenir le Parchemin des Anciens.",
+    "category": "Histoire",
+    "icon": "scroll-text"
+  },
+  {
+    "id": "daedra-ebony",
+    "title": "Lame d'Ébène",
+    "description": "Obtenir la Lame d'Ébène à Fort-Dragon.",
+    "category": "Daedra",
+    "icon": "sword"
+  },
+  {
+    "id": "quest-sailor",
+    "title": "Repos du Marin",
+    "description": "Obtenir la bénédiction du marin (Phare).",
+    "category": "Quête",
+    "icon": "anchor"
+  },
+  {
+    "id": "daedra-mehrunes",
+    "title": "Dague de Mehrunes",
+    "description": "Faire la quête de la dague de Mehrunes.",
+    "category": "Daedra",
+    "icon": "dagger"
+  },
+  {
+    "id": "daedra-meridia-gem",
+    "title": "Lumière",
+    "description": "Obtenir le cristal de Méridia.",
+    "category": "Daedra",
+    "icon": "gem"
+  },
+  {
+    "id": "daedra-collector",
+    "title": "Collectionneur",
+    "description": "Obtenir 4 artefacts Daedriques.",
+    "category": "Daedra",
+    "icon": "box"
+  },
+  {
+    "id": "divers-fish",
+    "title": "Pêcheur",
+    "description": "Pêcher un poisson.",
+    "category": "Divers",
+    "icon": "fish"
+  },
+  {
+    "id": "divers-fish-rare",
+    "title": "Pêche Miraculeuse",
+    "description": "Pêcher un objet rare.",
+    "category": "Divers",
+    "icon": "sparkles"
+  },
+  {
+    "id": "life-house",
+    "title": "Propriétaire",
+    "description": "Avoir une Maison.",
+    "category": "Vie",
+    "icon": "home"
+  },
+  {
+    "id": "divers-wild-horse",
+    "title": "Cheval Sauvage",
+    "description": "Apprivoiser un Cheval Sauvage.",
+    "category": "Divers",
+    "icon": "horse-head"
+  },
+  {
+    "id": "divers-backpack",
+    "title": "Aventurier",
+    "description": "Obtenir le sac à dos d'aventurier.",
+    "category": "Divers",
+    "icon": "backpack"
+  },
+  {
+    "id": "divers-saints",
+    "title": "Saints & Séducteurs",
+    "description": "Compléter la quête 'Saints & Séducteurs'.",
+    "category": "Divers",
+    "icon": "sword"
+  },
+  {
+    "id": "divers-chicken",
+    "title": "Crime de Guerre",
+    "description": "Tuer une poule de Rivebois.",
+    "category": "Divers",
+    "icon": "drumstick"
+  },
+  {
+    "id": "secret-notch",
+    "title": "Minecraft",
+    "description": "Trouver la Hache Ébréchée (Notched Pickaxe).",
+    "category": "Secret",
+    "icon": "pickaxe"
+  }
+]
