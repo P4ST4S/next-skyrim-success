@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Skyrim Color Palette */
+  --color-skyrim-gold: #c9a66b;
+  --color-skyrim-gold-light: #e5c589;
+  --color-skyrim-gold-dark: #a58650;
+
+  --color-skyrim-dark: #1a1612;
+  --color-skyrim-darker: #0f0d0a;
+  --color-skyrim-brown: #2d2416;
+  --color-skyrim-brown-light: #3f3322;
+
+  --color-skyrim-stone: #4a433a;
+  --color-skyrim-stone-light: #6b6156;
+
+  --color-skyrim-parchment: #f4e8d0;
+  --color-skyrim-parchment-dark: #d9c8a8;
+
+  /* Font Families */
+  --font-family-display: 'Cinzel', serif;
+  --font-family-body: 'Inter', sans-serif;
+
+  /* Shadows */
+  --shadow-skyrim: 0 4px 12px rgba(0, 0, 0, 0.6);
+  --shadow-skyrim-lg: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 20px rgba(201, 166, 107, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-body);
+  background: linear-gradient(
+    135deg,
+    var(--color-skyrim-darker) 0%,
+    var(--color-skyrim-dark) 50%,
+    var(--color-skyrim-brown) 100%
+  );
+  background-attachment: fixed;
+  color: var(--color-skyrim-parchment);
+  min-height: 100vh;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Texture overlay for authentic Skyrim feel */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-skyrim-gold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-skyrim-dark);
+  border-left: 1px solid var(--color-skyrim-gold-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-skyrim-gold-dark);
+  border: 2px solid var(--color-skyrim-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-skyrim-gold);
+}
+
+/* Parchment card style */
+.parchment-card {
+  background: linear-gradient(
+    135deg,
+    var(--color-skyrim-brown) 0%,
+    var(--color-skyrim-brown-light) 100%
+  );
+  border: 2px solid var(--color-skyrim-gold-dark);
+  box-shadow: var(--shadow-skyrim);
+  position: relative;
+}
+
+.parchment-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--color-skyrim-gold-dark);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Button styles */
+.btn-skyrim {
+  font-family: var(--font-family-display);
+  background: linear-gradient(
+    180deg,
+    var(--color-skyrim-gold) 0%,
+    var(--color-skyrim-gold-dark) 100%
+  );
+  color: var(--color-skyrim-dark);
+  border: 2px solid var(--color-skyrim-gold-dark);
+  box-shadow: var(--shadow-skyrim);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-skyrim:hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-skyrim-gold-light) 0%,
+    var(--color-skyrim-gold) 100%
+  );
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.btn-skyrim:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-skyrim);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-skyrim-gold);
+  color: var(--color-skyrim-dark);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-skyrim-gold);
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
