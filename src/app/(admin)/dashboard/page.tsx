@@ -42,17 +42,17 @@ const DashboardPage = async () => {
   return (
     <div className="min-h-screen relative z-10">
       {/* Header */}
-      <header className="border-b-2 border-[var(--color-skyrim-gold-dark)] bg-[var(--color-skyrim-darker)]/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b-2 border-skyrim-gold-dark bg-skyrim-darker/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Shield className="w-10 h-10 text-[var(--color-skyrim-gold)]" />
+              <Shield className="w-10 h-10 text-skyrim-gold" />
               <div>
-                <h1 className="text-3xl sm:text-4xl font-['Cinzel'] font-bold text-[var(--color-skyrim-gold)]">
-                  Admin Dashboard
+                <h1 className="text-3xl sm:text-4xl font-['Cinzel'] font-bold text-skyrim-gold">
+                  Tableau de bord Admin
                 </h1>
-                <p className="text-[var(--color-skyrim-parchment)]/70 text-sm mt-1">
-                  Manage achievements • Logged in as {session.userId}
+                <p className="text-skyrim-parchment/70 text-sm mt-1">
+                  Gérer les succès • Connecté en tant que {session.userId}
                 </p>
               </div>
             </div>
@@ -61,10 +61,10 @@ const DashboardPage = async () => {
             <form action={logout}>
               <button
                 type="submit"
-                className="flex items-center gap-2 px-4 py-2 bg-[var(--color-skyrim-stone)] hover:bg-[var(--color-skyrim-stone-light)] text-[var(--color-skyrim-parchment)] rounded-lg transition-colors border border-[var(--color-skyrim-gold-dark)]"
+                className="flex items-center gap-2 px-4 py-2 bg-skyrim-stone hover:bg-skyrim-stone-light text-skyrim-parchment rounded-lg transition-colors border border-skyrim-gold-dark"
               >
                 <LogOut className="w-4 h-4" />
-                <span className="font-['Cinzel'] text-sm">Logout</span>
+                <span className="font-['Cinzel'] text-sm">Déconnexion</span>
               </button>
             </form>
           </div>
@@ -74,22 +74,22 @@ const DashboardPage = async () => {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Info Banner */}
-        <div className="mb-8 p-4 bg-[var(--color-skyrim-gold)]/10 border-2 border-[var(--color-skyrim-gold-dark)] rounded-lg">
-          <p className="text-[var(--color-skyrim-parchment)] text-sm">
-            <strong className="font-['Cinzel'] text-[var(--color-skyrim-gold)]">
-              Admin Mode:
+        <div className="mb-8 p-4 bg-skyrim-gold/10 border-2 border-skyrim-gold-dark rounded-lg">
+          <p className="text-skyrim-parchment text-sm">
+            <strong className="font-['Cinzel'] text-skyrim-gold">
+              Mode Admin :
             </strong>{" "}
-            Click the diamond checkboxes to toggle achievement completion.
-            Changes are saved instantly with optimistic UI updates.
+            Cliquez sur les cases en losange pour activer/désactiver la complétion des succès.
+            Les changements sont sauvegardés instantanément avec mise à jour optimiste de l'interface.
           </p>
         </div>
 
         {/* Progress Section */}
         <section className="mb-12 parchment-card p-8 rounded-xl">
           <div className="flex items-center gap-3 mb-6">
-            <Trophy className="w-8 h-8 text-[var(--color-skyrim-gold)]" />
-            <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
-              Overall Progress
+            <Trophy className="w-8 h-8 text-skyrim-gold" />
+            <h2 className="text-2xl font-['Cinzel'] font-semibold text-skyrim-gold">
+              Progression Générale
             </h2>
           </div>
 
@@ -99,12 +99,12 @@ const DashboardPage = async () => {
             className="mb-4"
           />
 
-          <div className="flex justify-between text-sm text-[var(--color-skyrim-parchment)]/80">
+          <div className="flex justify-between text-sm text-skyrim-parchment/80">
             <span>
-              {completedCount} of {totalAchievements} achievements completed
+              {completedCount} sur {totalAchievements} succès complétés
             </span>
-            <span className="font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
-              {progressPercentage}% Complete
+            <span className="font-['Cinzel'] font-semibold text-skyrim-gold">
+              {progressPercentage}% Complété
             </span>
           </div>
         </section>
@@ -125,10 +125,10 @@ const DashboardPage = async () => {
               style={{ marginBottom: "1rem" }}
             >
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
+                <h2 className="text-2xl font-['Cinzel'] font-semibold text-skyrim-gold">
                   {category}
                 </h2>
-                <span className="text-sm text-[var(--color-skyrim-parchment)]/70 font-['Cinzel']">
+                <span className="text-sm text-skyrim-parchment/70 font-['Cinzel']">
                   {categoryCompleted} / {categoryAchievements.length}
                 </span>
               </div>

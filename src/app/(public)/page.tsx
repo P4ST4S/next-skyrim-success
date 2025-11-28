@@ -33,17 +33,17 @@ const HomePage = async () => {
   return (
     <div className="min-h-screen relative z-10">
       {/* Header */}
-      <header className="border-b-2 border-[var(--color-skyrim-gold-dark)] bg-[var(--color-skyrim-darker)]/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b-2 border-skyrim-gold-dark bg-skyrim-darker/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Shield className="w-10 h-10 text-[var(--color-skyrim-gold)]" />
+              <Shield className="w-10 h-10 text-skyrim-gold" />
               <div>
-                <h1 className="text-3xl sm:text-4xl font-['Cinzel'] font-bold text-[var(--color-skyrim-gold)]">
-                  Skyrim Achievements
+                <h1 className="text-3xl sm:text-4xl font-['Cinzel'] font-bold text-skyrim-gold">
+                  Succès de Skyrim
                 </h1>
-                <p className="text-[var(--color-skyrim-parchment)]/70 text-sm mt-1">
-                  Your legendary journey across Tamriel
+                <p className="text-skyrim-parchment/70 text-sm mt-1">
+                  Votre voyage légendaire à travers Tamriel
                 </p>
               </div>
             </div>
@@ -58,7 +58,7 @@ const HomePage = async () => {
           <div className="flex items-center gap-3 mb-6">
             <Trophy className="w-8 h-8 text-skyrim-gold" />
             <h2 className="text-2xl font-['Cinzel'] font-semibold text-skyrim-gold">
-              Overall Progress
+              Progression Générale
             </h2>
           </div>
 
@@ -68,12 +68,12 @@ const HomePage = async () => {
             className="mb-4"
           />
 
-          <div className="flex justify-between text-sm text-[var(--color-skyrim-parchment)]/80">
+          <div className="flex justify-between text-sm text-skyrim-parchment/80">
             <span>
-              {completedCount} of {totalAchievements} achievements completed
+              {completedCount} sur {totalAchievements} succès complétés
             </span>
-            <span className="font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
-              {progressPercentage}% Complete
+            <span className="font-['Cinzel'] font-semibold text-skyrim-gold">
+              {progressPercentage}% Complété
             </span>
           </div>
         </section>
@@ -95,10 +95,10 @@ const HomePage = async () => {
                 style={{ marginBottom: "1rem" }}
               >
                 <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
+                  <h2 className="text-2xl font-['Cinzel'] font-semibold text-skyrim-gold">
                     {category}
                   </h2>
-                  <span className="text-sm text-[var(--color-skyrim-parchment)]/70 font-['Cinzel']">
+                  <span className="text-sm text-skyrim-parchment/70 font-['Cinzel']">
                     {categoryCompleted} / {categoryAchievements.length}
                   </span>
                 </div>
@@ -120,10 +120,10 @@ const HomePage = async () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t-2 border-[var(--color-skyrim-gold-dark)] bg-[var(--color-skyrim-darker)]/80 backdrop-blur-sm mt-20">
+      <footer className="border-t-2 border-skyrim-gold-dark bg-skyrim-darker/80 backdrop-blur-sm mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
-          <p className="text-[var(--color-skyrim-parchment)]/70 text-sm">
-            May your road lead you to warm sands, Dragonborn
+          <p className="text-skyrim-parchment/70 text-sm">
+            Que ta route te mène vers des sables chauds, Enfant de Dragon
           </p>
         </div>
       </footer>

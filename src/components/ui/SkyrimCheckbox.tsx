@@ -45,11 +45,11 @@ export const SkyrimCheckbox = ({
       disabled={disabled || isPending}
       className={cn(
         'relative w-6 h-6 rotate-45 border-2 transition-all duration-200 flex items-center justify-center',
-        'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+        'focus-visible:outline-2 focus-visible:outline-offset-2',
         optimisticChecked
-          ? 'bg-gradient-to-br from-[var(--color-skyrim-gold-light)] to-[var(--color-skyrim-gold-dark)] border-[var(--color-skyrim-gold)]'
-          : 'bg-[var(--color-skyrim-brown)] border-[var(--color-skyrim-stone)]',
-        !disabled && 'hover:border-[var(--color-skyrim-gold)] hover:shadow-[0_0_10px_rgba(201,166,107,0.3)] cursor-pointer',
+          ? 'bg-linear-to-br from-skyrim-gold-light to-skyrim-gold-dark border-skyrim-gold'
+          : 'bg-skyrim-brown border-skyrim-stone',
+        !disabled && 'hover:border-skyrim-gold hover:shadow-[0_0_10px_rgba(201,166,107,0.3)] cursor-pointer',
         disabled && 'opacity-50 cursor-not-allowed',
         isPending && 'animate-pulse'
       )}
@@ -59,7 +59,7 @@ export const SkyrimCheckbox = ({
     >
       {optimisticChecked && (
         <Check
-          className="w-4 h-4 text-[var(--color-skyrim-dark)] -rotate-45"
+          className="w-4 h-4 text-skyrim-dark -rotate-45"
           strokeWidth={3}
         />
       )}

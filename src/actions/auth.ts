@@ -17,12 +17,12 @@ export const login = async (
   const adminPass = process.env.ADMIN_PASS;
 
   if (!adminUser || !adminPass) {
-    return { success: false, error: 'Server configuration error' };
+    return { success: false, error: 'Erreur de configuration du serveur' };
   }
 
   // Validate credentials
   if (username !== adminUser) {
-    return { success: false, error: 'Invalid credentials' };
+    return { success: false, error: 'Identifiants invalides' };
   }
 
   // Check password (support both plain text and bcrypt for flexibility)
@@ -37,7 +37,7 @@ export const login = async (
   }
 
   if (!isPasswordValid) {
-    return { success: false, error: 'Invalid credentials' };
+    return { success: false, error: 'Identifiants invalides' };
   }
 
   // Create session

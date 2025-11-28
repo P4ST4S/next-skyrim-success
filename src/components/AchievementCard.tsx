@@ -30,14 +30,14 @@ export const AchievementCard = ({
     <div
       className={cn(
         'parchment-card p-6 rounded-lg transition-all duration-300',
-        isCompleted && 'ring-2 ring-[var(--color-skyrim-gold)]/50',
+        isCompleted && 'ring-2 ring-skyrim-gold/50',
         !isCompleted && 'opacity-80 hover:opacity-100'
       )}
     >
       <div className="flex items-start gap-4">
         {/* Checkbox (visible only in admin mode) */}
         {isAdmin && (
-          <div className="flex-shrink-0 pt-1">
+          <div className="shrink-0 pt-1">
             <SkyrimCheckbox
               achievementId={achievement.id}
               isChecked={isCompleted}
@@ -49,18 +49,18 @@ export const AchievementCard = ({
         {/* Icon */}
         <div
           className={cn(
-            'flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
+            'shrink-0 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
             isCompleted
-              ? 'bg-gradient-to-br from-[var(--color-skyrim-gold-light)] to-[var(--color-skyrim-gold-dark)] shadow-[0_0_20px_rgba(201,166,107,0.4)]'
-              : 'bg-[var(--color-skyrim-stone)]'
+              ? 'bg-linear-to-br from-skyrim-gold-light to-skyrim-gold-dark shadow-[0_0_20px_rgba(201,166,107,0.4)]'
+              : 'bg-skyrim-stone'
           )}
         >
           <IconComponent
             className={cn(
               'w-6 h-6',
               isCompleted
-                ? 'text-[var(--color-skyrim-dark)]'
-                : 'text-[var(--color-skyrim-parchment)]/60'
+                ? 'text-skyrim-dark'
+                : 'text-skyrim-parchment/60'
             )}
             strokeWidth={2}
           />
@@ -70,7 +70,7 @@ export const AchievementCard = ({
         <div className="flex-1 min-w-0">
           {/* Category badge */}
           <div className="mb-2">
-            <span className="inline-block px-3 py-1 text-xs font-['Cinzel'] font-semibold bg-[var(--color-skyrim-dark)]/50 text-[var(--color-skyrim-gold)] rounded border border-[var(--color-skyrim-gold-dark)]">
+            <span className="inline-block px-3 py-1 text-xs font-['Cinzel'] font-semibold bg-skyrim-dark/50 text-skyrim-gold rounded border border-skyrim-gold-dark">
               {achievement.category}
             </span>
           </div>
@@ -80,25 +80,25 @@ export const AchievementCard = ({
             className={cn(
               'text-xl font-["Cinzel"] font-semibold mb-2 transition-colors',
               isCompleted
-                ? 'text-[var(--color-skyrim-gold)]'
-                : 'text-[var(--color-skyrim-parchment)]'
+                ? 'text-skyrim-gold'
+                : 'text-skyrim-parchment'
             )}
           >
             {achievement.title}
           </h3>
 
           {/* Description */}
-          <p className="text-[var(--color-skyrim-parchment)]/80 text-sm leading-relaxed">
+          <p className="text-skyrim-parchment/80 text-sm leading-relaxed">
             {achievement.description}
           </p>
         </div>
 
         {/* Completed indicator (visible only in public mode) */}
         {!isAdmin && isCompleted && (
-          <div className="flex-shrink-0">
-            <div className="w-6 h-6 rotate-45 bg-gradient-to-br from-[var(--color-skyrim-gold-light)] to-[var(--color-skyrim-gold-dark)] border-2 border-[var(--color-skyrim-gold)] flex items-center justify-center shadow-[0_0_10px_rgba(201,166,107,0.3)]">
+          <div className="shrink-0">
+            <div className="w-6 h-6 rotate-45 bg-linear-to-br from-skyrim-gold-light to-skyrim-gold-dark border-2 border-skyrim-gold flex items-center justify-center shadow-[0_0_10px_rgba(201,166,107,0.3)]">
               <LucideIcons.Check
-                className="w-4 h-4 text-[var(--color-skyrim-dark)] -rotate-45"
+                className="w-4 h-4 text-skyrim-dark -rotate-45"
                 strokeWidth={3}
               />
             </div>

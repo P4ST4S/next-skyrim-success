@@ -12,7 +12,7 @@ export const ProgressBar = ({ value, max = 100, className }: ProgressBarProps) =
   return (
     <div
       className={cn(
-        'relative w-full h-8 bg-[var(--color-skyrim-brown)] border-2 border-[var(--color-skyrim-gold-dark)] overflow-hidden',
+        'relative w-full h-8 bg-skyrim-brown border-2 border-skyrim-gold-dark overflow-hidden',
         className
       )}
       role="progressbar"
@@ -22,17 +22,17 @@ export const ProgressBar = ({ value, max = 100, className }: ProgressBarProps) =
     >
       {/* Progress fill */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[var(--color-skyrim-gold-dark)] via-[var(--color-skyrim-gold)] to-[var(--color-skyrim-gold-light)] transition-all duration-500 ease-out"
+        className="absolute inset-0 bg-linear-to-br from-skyrim-gold-dark via-skyrim-gold to-skyrim-gold-light transition-all duration-500 ease-out"
         style={{ width: `${percentage}%` }}
       >
         {/* Shine effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
+        <div className="absolute inset-0 bg-linear-to-br from-transparent via-white/20 to-transparent animate-shimmer" />
       </div>
 
       {/* Percentage text */}
       <div className="absolute inset-0 flex items-center justify-center">
         <span
-          className="text-sm font-bold font-['Cinzel'] text-[var(--color-skyrim-dark)] mix-blend-difference z-10"
+          className="text-sm font-bold font-['Cinzel'] text-skyrim-dark mix-blend-difference z-10"
           style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}
         >
           {Math.round(percentage)}%
@@ -40,7 +40,7 @@ export const ProgressBar = ({ value, max = 100, className }: ProgressBarProps) =
       </div>
 
       {/* Border decoration */}
-      <div className="absolute inset-0 border border-[var(--color-skyrim-gold)]/30 pointer-events-none" />
+      <div className="absolute inset-0 border border-skyrim-gold/30 pointer-events-none" />
     </div>
   );
 };
