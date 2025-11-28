@@ -1,9 +1,9 @@
-import { getCompletedAchievements } from '@/actions/achievements';
-import { AchievementCard } from '@/components/AchievementCard';
-import { ProgressBar } from '@/components/ui/ProgressBar';
-import { calculateProgress } from '@/lib/utils';
-import { Trophy, Shield } from 'lucide-react';
-import achievementsData from '@/data/achievements.json';
+import { getCompletedAchievements } from "@/actions/achievements";
+import { AchievementCard } from "@/components/AchievementCard";
+import { ProgressBar } from "@/components/ui/ProgressBar";
+import { calculateProgress } from "@/lib/utils";
+import { Trophy, Shield } from "lucide-react";
+import achievementsData from "@/data/achievements.json";
 
 interface Achievement {
   id: string;
@@ -20,7 +20,10 @@ const HomePage = async () => {
 
   const totalAchievements = achievements.length;
   const completedCount = completedIds.length;
-  const progressPercentage = calculateProgress(completedCount, totalAchievements);
+  const progressPercentage = calculateProgress(
+    completedCount,
+    totalAchievements
+  );
 
   // Group achievements by category
   const categories = Array.from(
@@ -49,17 +52,21 @@ const HomePage = async () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center">
         {/* Progress Section */}
-        <section className="mb-12 parchment-card p-8 rounded-xl">
+        <section className="mb-12 parchment-card p-8 rounded-xl w-full max-w-4xl">
           <div className="flex items-center gap-3 mb-6">
-            <Trophy className="w-8 h-8 text-[var(--color-skyrim-gold)]" />
-            <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
+            <Trophy className="w-8 h-8 text-skyrim-gold" />
+            <h2 className="text-2xl font-['Cinzel'] font-semibold text-skyrim-gold">
               Overall Progress
             </h2>
           </div>
 
-          <ProgressBar value={completedCount} max={totalAchievements} className="mb-4" />
+          <ProgressBar
+            value={completedCount}
+            max={totalAchievements}
+            className="mb-4"
+          />
 
           <div className="flex justify-between text-sm text-[var(--color-skyrim-parchment)]/80">
             <span>
@@ -72,38 +79,44 @@ const HomePage = async () => {
         </section>
 
         {/* Achievements by Category */}
-        {categories.map((category) => {
-          const categoryAchievements = achievements.filter(
-            (a) => a.category === category
-          );
-          const categoryCompleted = categoryAchievements.filter((a) =>
-            completedSet.has(a.id)
-          ).length;
+        <div className="w-full max-w-4xl mb-14">
+          {categories.map((category) => {
+            const categoryAchievements = achievements.filter(
+              (a) => a.category === category
+            );
+            const categoryCompleted = categoryAchievements.filter((a) =>
+              completedSet.has(a.id)
+            ).length;
 
-          return (
-            <section key={category} className="mb-12">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
-                  {category}
-                </h2>
-                <span className="text-sm text-[var(--color-skyrim-parchment)]/70 font-['Cinzel']">
-                  {categoryCompleted} / {categoryAchievements.length}
-                </span>
-              </div>
+            return (
+              <section
+                key={category}
+                className="pb-12 border-b-2 border-skyrim-gold-dark/20 last:border-b-0 last:pb-0"
+                style={{ marginBottom: "1rem" }}
+              >
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
+                    {category}
+                  </h2>
+                  <span className="text-sm text-[var(--color-skyrim-parchment)]/70 font-['Cinzel']">
+                    {categoryCompleted} / {categoryAchievements.length}
+                  </span>
+                </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {categoryAchievements.map((achievement) => (
-                  <AchievementCard
-                    key={achievement.id}
-                    achievement={achievement}
-                    isCompleted={completedSet.has(achievement.id)}
-                    isAdmin={false}
-                  />
-                ))}
-              </div>
-            </section>
-          );
-        })}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {categoryAchievements.map((achievement) => (
+                    <AchievementCard
+                      key={achievement.id}
+                      achievement={achievement}
+                      isCompleted={completedSet.has(achievement.id)}
+                      isAdmin={false}
+                    />
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
       </main>
 
       {/* Footer */}

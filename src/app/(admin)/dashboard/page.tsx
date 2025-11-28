@@ -1,12 +1,12 @@
-import { redirect } from 'next/navigation';
-import { verifySession } from '@/lib/auth';
-import { getCompletedAchievements } from '@/actions/achievements';
-import { logout } from '@/actions/auth';
-import { AchievementCard } from '@/components/AchievementCard';
-import { ProgressBar } from '@/components/ui/ProgressBar';
-import { calculateProgress } from '@/lib/utils';
-import { Trophy, Shield, LogOut } from 'lucide-react';
-import achievementsData from '@/data/achievements.json';
+import { redirect } from "next/navigation";
+import { verifySession } from "@/lib/auth";
+import { getCompletedAchievements } from "@/actions/achievements";
+import { logout } from "@/actions/auth";
+import { AchievementCard } from "@/components/AchievementCard";
+import { ProgressBar } from "@/components/ui/ProgressBar";
+import { calculateProgress } from "@/lib/utils";
+import { Trophy, Shield, LogOut } from "lucide-react";
+import achievementsData from "@/data/achievements.json";
 
 interface Achievement {
   id: string;
@@ -20,7 +20,7 @@ const DashboardPage = async () => {
   const session = await verifySession();
 
   if (!session) {
-    redirect('/login');
+    redirect("/login");
   }
 
   const achievements = achievementsData as Achievement[];
@@ -29,7 +29,10 @@ const DashboardPage = async () => {
 
   const totalAchievements = achievements.length;
   const completedCount = completedIds.length;
-  const progressPercentage = calculateProgress(completedCount, totalAchievements);
+  const progressPercentage = calculateProgress(
+    completedCount,
+    totalAchievements
+  );
 
   // Group achievements by category
   const categories = Array.from(
@@ -75,9 +78,9 @@ const DashboardPage = async () => {
           <p className="text-[var(--color-skyrim-parchment)] text-sm">
             <strong className="font-['Cinzel'] text-[var(--color-skyrim-gold)]">
               Admin Mode:
-            </strong>{' '}
-            Click the diamond checkboxes to toggle achievement completion. Changes are
-            saved instantly with optimistic UI updates.
+            </strong>{" "}
+            Click the diamond checkboxes to toggle achievement completion.
+            Changes are saved instantly with optimistic UI updates.
           </p>
         </div>
 
@@ -90,7 +93,11 @@ const DashboardPage = async () => {
             </h2>
           </div>
 
-          <ProgressBar value={completedCount} max={totalAchievements} className="mb-4" />
+          <ProgressBar
+            value={completedCount}
+            max={totalAchievements}
+            className="mb-4"
+          />
 
           <div className="flex justify-between text-sm text-[var(--color-skyrim-parchment)]/80">
             <span>
@@ -112,7 +119,11 @@ const DashboardPage = async () => {
           ).length;
 
           return (
-            <section key={category} className="mb-12">
+            <section
+              key={category}
+              className="mb-12"
+              style={{ marginBottom: "1rem" }}
+            >
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-['Cinzel'] font-semibold text-[var(--color-skyrim-gold)]">
                   {category}
